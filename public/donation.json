@@ -8,7 +8,7 @@
       "card_bg": "#0052FF26",
       "text_color": "#0052FF",
       "description": "Ensure access to clean and safe drinking water for children, promoting better health and well-being. Access to uncontaminated water is a fundamental necessity, especially for children, as it significantly impacts their overall health and development. By supporting this initiative, you contribute to providing a vital resource that aids in preventing waterborne diseases and fostering a healthier future for the younger generation.",
-      "price": 10.00
+      "price": 100
     },
 
     {
@@ -20,7 +20,7 @@
         "card_bg": "#FF442626",
         "text_color": "#FF444A",
         "description": "Enhance your mathematical skills with our comprehensive mathematics workbook. Covering various topics, this workbook helps improve problem-solving abilities and builds a strong foundation in math.",
-        "price": 19.99
+        "price": 199
       },
       {
         "id": 3,
@@ -31,7 +31,7 @@
         "card_bg": "#79C23F26",
         "text_color": "#79C23F",
         "description": "Upgrade your style with our comfortable and trendy men's casual shirt. Perfect for various occasions, this shirt offers both style and comfort.",
-        "price": 29.99
+        "price": 219
       },
 
       {
@@ -43,7 +43,7 @@
         "card_bg": "#F8714726",
         "text_color": "#F87147",
         "description": "Support local farmers and enjoy fresh, pesticide-free organic vegetables. Embrace a healthier lifestyle and contribute to sustainable farming practices by choosing organic produce.",
-        "price": 5.00
+        "price": 150
       },
 
       {
@@ -55,7 +55,7 @@
         "card_bg": "#F8714726",
         "text_color": "#F87147",
         "description": "Indulge in a variety of seasonal, locally sourced fruits direct from the farm. Enhance your well-being with the goodness of fresh fruits and support local farmers.",
-        "price": 3.00
+        "price": 130
       },
       {
         "id": 6,
@@ -66,18 +66,18 @@
         "card_bg": "#79C23F26",
         "text_color": "#79C23F",
         "description": "Step into summer with our elegant and breathable women's summer dress. Stay fashionable and comfortable in hot weather with this chic dress.",
-        "price": 39.99
+        "price": 139
       },
       {
         "id": 7,
         "image": "https://i.ibb.co/0CBdgsk/Education.png",
         "category": "education",
-        "title": "Language Learning App Subscription",
+        "title": "Language Learning App",
         "category_bg": "#FF442D33",
         "card_bg": "#FF442626",
         "text_color": "#FF444A",
         "description": "Embark on a language learning journey with our interactive language learning app subscription. Immerse yourself in a new language, improve your communication skills, and broaden your horizons.",
-        "price": 9.99
+        "price": 99
       },
     {
         "id": 8,
@@ -88,7 +88,7 @@
       "card_bg": "#0052FF26",
       "text_color": "#0052FF",
       "description": "Support a vaccination campaign to protect communities from preventable diseases and improve overall public health. Vaccinations are a cornerstone of preventive healthcare, safeguarding individuals and communities against serious illnesses. By funding this initiative, you contribute to a widespread vaccination effort, helping to create immunity and reduce the incidence of communicable diseases, ultimately enhancing the well-being of society.",
-      "price": 25.00
+      "price": 258
     },
     {
         "id": 9,
@@ -99,7 +99,7 @@
       "card_bg": "#0052FF26",
       "text_color": "#0052FF",
       "description": "Fund a nutrition program that ensures proper nutrition for children and adults, improving their health and vitality. Adequate nutrition is fundamental for growth, development, and the maintenance of good health. By backing this program, you support initiatives aimed at providing balanced and nutritious meals to individuals, contributing to their overall health, cognitive development, and resilience against illnesses.",
-      "price": 15.00
+      "price": 155
     },
     {
         "id": 10,
@@ -110,7 +110,7 @@
         "card_bg": "#FF442626",
         "text_color": "#FF444A",
         "description": "Encourage curiosity and scientific discovery with our science exploration kit. Packed with experiments and educational materials, this kit makes learning science engaging and fun for children.",
-        "price": 29.99
+        "price": 290
       },
       {
         "id": 11,
@@ -121,18 +121,18 @@
         "card_bg": "#79C23F26",
         "text_color": "#79C23F",
         "description": "Dress your little ones in style with our pack of vibrant and soft kids' t-shirts. Keep them comfortable and trendy throughout the day.",
-        "price": 19.99
+        "price": 210
       },
       {
         "id": 12,
         "image": "https://i.ibb.co/cNNwYZQ/Food.png",
         "category": "food",
-        "title": "Gourmet Chocolate Collection",
+        "title": "Chocolate Collection",
         "category_bg": "#F8714733",
         "card_bg": "#F8714726",
         "text_color": "#F87147",
         "description": "Experience exquisite flavors with our curated gourmet chocolate collection. Handcrafted with the finest ingredients, these chocolates are a treat for your taste buds.",
-        "price": 12.99
+        "price": 120
       }
   ]
   

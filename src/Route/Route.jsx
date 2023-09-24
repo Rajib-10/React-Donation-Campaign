@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Donation from "../Pages/Donation/Donation";
 import Statistics from "../Pages/Statistics/Statistics";
 import Error from "../Pages/Statistics/Error/Error";
+import SingleCard from "../Pages/SingleCard/SingleCard";
 
 
 const myCreatedRoute = createBrowserRouter([
@@ -14,7 +15,8 @@ const myCreatedRoute = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                loader: ()=>fetch("donation.json")
             },
             {
                 path: "/donation",
@@ -22,6 +24,11 @@ const myCreatedRoute = createBrowserRouter([
             },{
                 path: "/statistics",
                 element: <Statistics />
+            },
+            {
+                path: "/singleCard/:id",
+                element: <SingleCard />,
+                loader: ()=>fetch("donation.json")
             }
         ]
     }
