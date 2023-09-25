@@ -7,7 +7,7 @@ const AllCard = ({allCard}) => {
     const {id,category,image,title,category_bg,card_bg,text_color} = allCard || {}
     return (
         <div>
-           <Link to={`/singleCard/${id} `}>
+           <Link to={`/singleItem/${id}`}>
            <div className="card card-compact shadow-xl" style={{backgroundColor:card_bg,color:text_color}}>
                 <figure><img src={image} alt="card img" /></figure>
                 <div className="card-body">
