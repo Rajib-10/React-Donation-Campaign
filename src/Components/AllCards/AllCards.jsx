@@ -2,16 +2,34 @@
 import AllCard from "../AllCard/AllCard";
 
 
-const AllCards = ({allCards}) => {
-    return (
-        <div className="py-7">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {
-                allCards?.map(allCard=> <AllCard key={allCard.id} allCard={allCard} />)
-            }
-        </div>
-        </div>
-    );
-};
+// const AllCards = ({allCards}) => {
+//     return (
+//         <div className="py-7">
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+//             {
+//                 allCards?.map(allCard=> <AllCard key={allCard.id} allCard={allCard} />)
+//             }
+//         </div>
+//         </div>
+//     );
+// };
 
-export default AllCards;
+// export default AllCards;
+const AllCards = ({ allCards, categoryFilter }) => {
+    const filteredCards = categoryFilter
+      ? allCards.filter((card) => card.category === categoryFilter.toLowerCase())
+      : allCards;
+  
+    return (
+      <div className="py-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {filteredCards?.map((allCard) => (
+            <AllCard key={allCard.id} allCard={allCard} />
+          ))}
+        </div>
+      </div>
+    );
+  };
+  
+  export default AllCards;
+  

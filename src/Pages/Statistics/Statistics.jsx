@@ -14,6 +14,7 @@ const Statistics = () => {
         setCount(storedItem.length)
         // setTotalCount(allItems.reduce((prev,current)=>prev+current.price,0))
         setTotalCount(allItems.length)
+        
     },[allItems])
     
     return (

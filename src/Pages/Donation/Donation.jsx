@@ -15,7 +15,7 @@ const Donation = () => {
         }
 
     },[])
-    console.log(items)
+   
     return (
         <div>
             {noFound ? <p className="flex justify-center items-center h-[80vh] font-bold">{noFound}</p> :

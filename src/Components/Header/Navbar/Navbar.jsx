@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between items-center py-5">
             <div>
-                <Link>
+                <Link to="/">
                 <img src={Logo} alt="" />
                 </Link>
             </div>
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <NavLink
                         to="/"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                            isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold text-lg" : "font-bold text-lg"
                         }
                         >
                         Home
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <NavLink
                         to="/donation"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                            isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold text-lg" : "font-bold text-lg"
                         }
                         >
                         Donation
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <NavLink
                         to="/statistics"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                            isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold text-lg" : "font-bold text-lg"
                         }
                         >
                         Statistics

@@ -1,11 +1,10 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
-import textImg from "../../assets/donation.jpg"
+import {  useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const SingleCard = () => {
    const [itemFind,setItemFind] = useState({})
-   const {price,description,title,image} = itemFind || {}
+   const {price,description,title,image,text_color} = itemFind || {}
     const {id} = useParams();
     const  allItems = useLoaderData()
     
@@ -54,12 +53,12 @@ const SingleCard = () => {
            <div className="h-[100px] bg-gray-900 w-[1070px] mx-10 absolute bottom-[12%] opacity-20">
            </div>
             <div className="absolute left-[10%] bottom-[16%]">
-           <Link>
-           <button onClick={handleButton} className="btn btn-secondary capitalize">Donate ${price}</button>
-           </Link>
+           
+           <button onClick={handleButton} className="btn btn-secondary capitalize border-none outline-none" style={{backgroundColor:text_color}}>Donate ${price}</button>
+           
             </div>
-            <h1>{title}</h1>
-            <p>{description}</p>
+            <h1 className="text-[#0B0B0B] font-bold text-4xl mt-14 px-10">{title}</h1>
+            <p className="text-[#0B0B0BB2] mt-6 text-justify px-10 pb-10">{description}</p>
         </div>
     );
 };
