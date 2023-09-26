@@ -1,31 +1,18 @@
 /* eslint-disable react/prop-types */
 import AllCard from "../AllCard/AllCard";
-
-
-// const AllCards = ({allCards}) => {
-//     return (
-//         <div className="py-7">
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-//             {
-//                 allCards?.map(allCard=> <AllCard key={allCard.id} allCard={allCard} />)
-//             }
-//         </div>
-//         </div>
-//     );
-// };
-
-// export default AllCards;
 const AllCards = ({ allCards, categoryFilter }) => {
     const filteredCards = categoryFilter
-      ? allCards.filter((card) => card.category === categoryFilter.toLowerCase())
+      ? allCards.filter((card) => card.category.includes(categoryFilter.toLowerCase()))
       : allCards;
-  
+      console.log(filteredCards.length)
     return (
       <div className="py-7">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filteredCards?.map((allCard) => (
+          {filteredCards.length > 0 ? filteredCards?.map((allCard) => (
             <AllCard key={allCard.id} allCard={allCard} />
-          ))}
+          )) : <div className="flex justify-center items-center">
+            <p className="font-bold text-red-600 py-6">Not Found Matching data</p>
+          </div> }
         </div>
       </div>
     );
