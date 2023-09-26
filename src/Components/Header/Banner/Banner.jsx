@@ -28,14 +28,14 @@ const Banner = ({ onSearch }) => {
     };
   
     return (
-      <div className="h-[70vh]">
+      <div className="h-[70vh] text-center">
         <img src={BannerImg} className="h-[70vh] object-cover w-full opacity-10" alt="" />
-        <div className="absolute top-[40%] left-[20%] text-center space-y-5">
-          <h1 className="text-[#0B0B0B] text-5xl font-bold">I Grow By Helping People In Need</h1>
+        <div className="absolute left-[7%] top-[48%] md:top-[46%] lg:top-[40%] md:left-[20%] lg:left-[12%]  xl:left-[20%] text-center space-y-5">
+          <h1 className="text-[#0B0B0B] text-xl md:text-3xl lg:text-5xl font-bold">I Grow By Helping People In Need</h1>
           <input
             type="text"
-            placeholder="Search by category..."
-            className="input input-md w-full max-w-xs rounded-none rounded-l-lg outline-none focus:outline-none"
+            placeholder="Search here..."
+            className="input input-md w-full max-w-[200px] md:max-w-xs rounded-none rounded-l-lg outline-none focus:outline-none"
             value={searchCategory}
             onChange={(e) => setSearchCategory(e.target.value)}
           />

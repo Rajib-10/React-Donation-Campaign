@@ -20,18 +20,10 @@ const Statistics = () => {
     return (
         
         <div>
-            {/* <VictoryPie width={1000}
-            colorScale={["#4AAE9B", "#EFBB35"]}
-            data={[
-                { x: "Your Donation", y: count },
-                { x: "Total Donation", y: 12 }
-                
-            ]}
-            /> */}
+           
     <Chart type="pie"
-    width={1000}
-    height={450}
-    series={[count,totalCount]}
+    className="w-full md:w-[70%] lg:w-[50%] mx-auto flex justify-center items-center"
+    series={[count,totalCount-count]}
     options={{
         title:{text:"Donation Campaign Pie Chart"},
         labels:['Your donation $',"Total donation $",],
