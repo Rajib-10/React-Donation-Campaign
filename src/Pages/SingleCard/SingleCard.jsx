@@ -1,4 +1,4 @@
-import {  useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
@@ -38,7 +38,7 @@ const SingleCard = () => {
             localStorage.setItem('favorite', JSON.stringify(addedFavorite))
             Swal.fire(
                 'Good job!',
-                'Phone is added!',
+                `${title} is added!`,
                 'success'
               )
         }
@@ -50,12 +50,11 @@ const SingleCard = () => {
     return (
         <div className="h-[70vh]">
             <img className="h-[70vh] w-full object-cover px-2 md:px-10" src={image} alt="" />
-           <div className="h-[100px] bg-gray-900  md:w-[688px] lg:w-[945px] xl:w-[1070px] mx-10 absolute  md:bottom-[9%] lg:bottom-[9%] xl:bottom-[12%] opacity-20">
+           <div className="h-[100px] bg-gray-900  md:w-[648px] lg:w-[920px] xl:w-[1070px] mx-10 absolute  md:bottom-[9%] lg:bottom-[9%] xl:bottom-[12%] opacity-20">
            </div>
-            <div className="absolute left-[7%] bottom-[5%] md:bottom-[13%]  lg:bottom-[13%] xl:bottom-[16%] xl:left-[16%]">
-           
-           <button onClick={handleButton} className="btn btn-secondary capitalize border-none outline-none" style={{backgroundColor:text_color}}>Donate ${price}</button>
-           
+            <div className="absolute left-[7%]  bottom-[5%] md:left-[10%] md:bottom-[13%]  lg:bottom-[13%] xl:bottom-[16%] xl:left-[10%]">
+          <button onClick={handleButton} className="btn btn-secondary capitalize border-none outline-none" style={{backgroundColor:text_color}}>Donate ${price}</button>
+          
             </div>
             <h1 className="text-[#0B0B0B] font-bold text-xl md:text-4xl mt-14 px-2 md:px-10 ">{title}</h1>
             <p className="text-[#0B0B0BB2] mt-6 text-justify px-2 md:px-10 pb-10">{description}</p>

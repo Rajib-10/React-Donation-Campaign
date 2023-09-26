@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-// import { VictoryPie } from "victory";
 import  Chart from "react-apexcharts"
 import { useLoaderData } from "react-router-dom";
+
 
 
 const Statistics = () => {
@@ -10,9 +10,11 @@ const Statistics = () => {
     const allItems = useLoaderData()
     useEffect(()=>{
         const storedItem = JSON.parse(localStorage.getItem('favorite'))
-        // setCount(storedItem.reduce((prev,current)=>prev+current.price,0))
-        setCount(storedItem.length)
-        // setTotalCount(allItems.reduce((prev,current)=>prev+current.price,0))
+        if(storedItem){
+            setCount(storedItem.length)
+        }else{
+            setCount(0)
+        }
         setTotalCount(allItems.length)
         
     },[allItems])
@@ -31,7 +33,6 @@ const Statistics = () => {
     >
 
     </Chart>
-        
         </div>
     );
 };

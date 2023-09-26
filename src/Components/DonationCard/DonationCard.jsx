@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const DonationCard = ({donateItem}) => {
-    const {price,title,category,image,text_color,card_bg,category_bg} = donateItem
+    const {price,title,category,image,text_color,card_bg,category_bg,id} = donateItem
     return (
         <div>
             <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md" style={{backgroundColor:card_bg,color:text_color}}>
@@ -23,7 +25,9 @@ const DonationCard = ({donateItem}) => {
                     <p className="mb-8 block font-sans text-base font-normal leading-relaxed  antialiased">
                    ${price}
                     </p>
+                    <Link to={`/singleItem/${id}`}>
                     <button className="btn btn-secondary outline-none border-none" style={{backgroundColor:text_color}}>View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>

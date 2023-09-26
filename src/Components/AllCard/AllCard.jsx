@@ -12,7 +12,7 @@ const AllCard = ({allCard}) => {
                 <figure><img src={image} alt="card img" /></figure>
                 <div className="card-body">
                      <h2 className="p-1 font-semibold w-2/6 text-center rounded-md capitalize" style={{backgroundColor:category_bg}}>{category}</h2>
-                    <p className="card-title lg:text-2xl xl:text-3xl">{title}</p>
+                    <p className="card-title lg:text-[17px] xl:text-xl">{title}</p>
                 </div>
              </div>
            </Link>
