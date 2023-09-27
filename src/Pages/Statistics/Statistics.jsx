@@ -28,7 +28,7 @@ const Statistics = () => {
     series={[count,totalCount-count]}
     options={{
         title:{text:"Donation Campaign Pie Chart"},
-        labels:['Your donation $',"Total donation $",],
+        labels:[`Your donation:${count}`,`Total donation:${totalCount}`,],
     }}
     >
 

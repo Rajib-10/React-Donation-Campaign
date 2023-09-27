@@ -17,8 +17,8 @@ Donation Campaign is a simple react project where we are exploring react router 
 * **statistics Pie Chart:**    
     Users can easily understand the difference between the total donation and their own donation by looking at the statistics pie chart.
 
-* **Save to localstorage:**  
-    Users data will be stored in localstorage so that users can easily understand what they have donated before. 
+* **Save to localStorage:**  
+    Users data will be stored in localStorage so that users can easily understand what they have donated before. 
 
 
 

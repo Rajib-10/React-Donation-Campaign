@@ -19,14 +19,14 @@ const DonationCard = ({donateItem}) => {
                     <h6 className="mb-4 block font-sans text-base font-semibold capitalize leading-relaxed tracking-normal antialiased py-1 text-center rounded-md w-[17vh]" style={{backgroundColor: category_bg}}>
                     {category}
                     </h6>
-                    <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal  antialiased text-black">
+                    <h4 className="mb-2 block font-sans text-2xl lg:text-xl xl:text-2xl font-semibold leading-snug tracking-normal  antialiased text-black">
                     {title}
                     </h4>
-                    <p className="mb-8 block font-sans text-base font-normal leading-relaxed  antialiased">
+                    <p className="mb-8 block font-sans text-base font-semibold leading-relaxed  antialiased">
                    ${price}
                     </p>
                     <Link to={`/singleItem/${id}`}>
-                    <button className="btn btn-secondary outline-none border-none" style={{backgroundColor:text_color}}>View Details</button>
+                    <button className="btn btn-secondary outline-none border-none md:font-semibold md:text-lg" style={{backgroundColor:text_color}}>View Details</button>
                     </Link>
                 </div>
             </div>

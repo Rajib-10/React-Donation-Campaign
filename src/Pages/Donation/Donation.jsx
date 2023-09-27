@@ -39,7 +39,7 @@ const Donation = () => {
                     }
                 </div>
                 <div className="py-5 text-center">
-                    {items.length>4 &&<button onClick={()=>setIsShow(!isShow)} className="btn btn-info bg-[#009444] text-white capitalize">{isShow ? "See Less" : "Show All"}</button>
+                    {items.length>4 &&<button onClick={()=>setIsShow(!isShow)} className={`btn btn-info bg-[#009444] text-white capitalize ${isShow && "hidden"}`}>Show All</button>
 }
                 </div>
             </div>
